@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.0">
+
+
+    <!-- Make sub deployments isolated by default, so they cannot see each others classes without a Class-Path entry -->
+    <ear-subdeployments-isolated>false</ear-subdeployments-isolated>
+
+
+    <!-- Exclusions allow you to prevent the server from automatically adding some dependencies -->
+    <deployment>
+        <exclusions>
+            <module name="org.apache.log4j" />
+            <module name="org.slf4j" />
+            <module name="org.slf4j.ext" />
+            <module name="org.slf4j.impl" />
+            <module name="org.slf4j.jcl-over-slf4j" />
+            <module name="org.apache.commons.logging" />
+            <module name="org.jboss.logging"/>
+            <module name="org.jboss.logging.jul-to-slf4j-stub"/>
+            <module name="org.jboss.logmanager"/>
+            <module name="org.jboss.log4j.logmanager"/>
+            <module name="org.apache.log4j"/>
+            <module name="org.log4j"/>
+        </exclusions>
+
+        <!--<dependencies>
+            <module name="deplyment.Publicador.ear.publicador-ejb-1.0.jar"/>
+            <module name="deplyment.Publicador.ear.publicador-war-1.0.war"/>
+        </dependencies>-->
+    </deployment>
+
+    <sub-deployment name="publicador-ejb-1.0.jar">
+        <exclusions>
+            <module name="org.apache.log4j" />
+            <module name="org.slf4j" />
+            <module name="org.slf4j.ext" />
+            <module name="org.slf4j.impl" />
+            <module name="org.slf4j.jcl-over-slf4j" />
+            <module name="org.apache.commons.logging" />
+            <module name="org.jboss.logging"/>
+            <module name="org.jboss.logging.jul-to-slf4j-stub"/>
+            <module name="org.jboss.logmanager"/>
+            <module name="org.jboss.log4j.logmanager"/>
+            <module name="org.apache.log4j"/>
+            <module name="org.log4j"/>
+        </exclusions>
+
+    </sub-deployment>
+
+    <sub-deployment name="publicador-war-1.0.war">
+
+        <dependencies>
+            <module name="deployment.publicador-ear-1.0.ear.publicador-ejb-1.0.jar" optional="false" export="true" />
+        </dependencies>
+
+        <exclusions>
+            <module name="org.apache.log4j" />
+            <module name="org.slf4j" />
+            <module name="org.slf4j.ext" />
+            <module name="org.slf4j.impl" />
+            <module name="org.slf4j.jcl-over-slf4j" />
+            <module name="org.apache.commons.logging" />
+            <module name="org.jboss.logging"/>
+            <module name="org.jboss.logging.jul-to-slf4j-stub"/>
+            <module name="org.jboss.logmanager"/>
+            <module name="org.jboss.log4j.logmanager"/>
+            <module name="org.apache.log4j"/>
+            <module name="org.log4j"/>
+        </exclusions>
+
+    </sub-deployment>
+
+
+
+
+</jboss-deployment-structure>

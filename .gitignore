@@ -1,0 +1,16 @@
+*.iml
+.idea
+*.class
+*.svn
+target
+publicador-ear/.classpath
+publicador-ear/.gitignore
+publicador-ear/.project
+publicador-ejb/src/.classpath
+publicador-ejb/src/.gitignore
+publicador-ejb/src/.project
+publicador-war/.classpath
+publicador-war/.gitignore
+publicador-war/.project
+publicador-war/.settings/org.eclipse.jdt.core.prefs
+publicador-war/.settings/org.eclipse.wst.ws.service.policy.prefs

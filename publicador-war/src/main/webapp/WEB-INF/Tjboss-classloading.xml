@@ -1,0 +1,7 @@
+<classloading xmlns="urn:jboss:classloading:1.0"
+              name="publicador-war-1.0.war"
+              domain="DefaultDomain"
+              export-all="NON_EMPTY"
+              import-all="false"
+              parent-first="false">
+</classloading>

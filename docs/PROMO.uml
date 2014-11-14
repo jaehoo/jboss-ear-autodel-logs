@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>350afeb2-adab-42c4-8634-e90289e55036.schema:PROMO</OriginalElement>
+  <nodes>
+    <node x="233.0" y="641.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CO</node>
+    <node x="1738.0" y="597.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CP</node>
+    <node x="719.0" y="0.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CAB</node>
+    <node x="874.0" y="981.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.TPSR_CSS_TEMPLATES</node>
+    <node x="1212.0" y="696.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_MP</node>
+    <node x="331.0" y="981.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.TPSR_USERS</node>
+    <node x="0.0" y="981.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.TPSR_MSG_TEMPLATES</node>
+    <node x="606.0" y="707.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_TEXT</node>
+    <node x="1123.0" y="981.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.SEQ_TPSR_USERS</node>
+    <node x="1485.0" y="707.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_NODO</node>
+    <node x="859.0" y="652.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_BS</node>
+    <node x="0.0" y="718.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_FOTO</node>
+    <node x="616.0" y="981.0">350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_FOTO2</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_MP" target="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CAB">
+      <point x="0.0" y="-70.5" />
+      <point x="1338.5" y="577.0" />
+      <point x="1113.0714285714287" y="577.0" />
+      <point x="87.57142857142867" y="268.5" />
+    </edge>
+    <edge source="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_FOTO" target="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CAB">
+      <point x="0.0" y="-48.5" />
+      <point x="106.5" y="557.0" />
+      <point x="762.7857142857142" y="557.0" />
+      <point x="-262.7142857142858" y="268.5" />
+    </edge>
+    <edge source="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_BS" target="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CAB">
+      <point x="0.0" y="-114.5" />
+      <point x="0.0" y="268.5" />
+    </edge>
+    <edge source="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_TEXT" target="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CAB">
+      <point x="0.0" y="-59.5" />
+      <point x="722.5" y="577.0" />
+      <point x="937.9285714285716" y="577.0" />
+      <point x="-87.57142857142844" y="268.5" />
+    </edge>
+    <edge source="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CO" target="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CAB">
+      <point x="0.0" y="-125.5" />
+      <point x="409.5" y="567.0" />
+      <point x="850.3571428571429" y="567.0" />
+      <point x="-175.1428571428571" y="268.5" />
+    </edge>
+    <edge source="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_NODO" target="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CAB">
+      <point x="0.0" y="-59.5" />
+      <point x="1601.5" y="567.0" />
+      <point x="1200.6428571428573" y="567.0" />
+      <point x="175.14285714285734" y="268.5" />
+    </edge>
+    <edge source="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CP" target="350afeb2-adab-42c4-8634-e90289e55036.table:PROMO.ZACMTT_PUBL_CAB">
+      <point x="0.0" y="-169.5" />
+      <point x="1954.5" y="557.0" />
+      <point x="1288.2142857142858" y="557.0" />
+      <point x="262.7142857142858" y="268.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.30910683012259194" x="1085.5" y="561.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration debug="true">
+
+    <!--
+        Rolling file pattern
+        yyyy-MM-ww          : Per week
+        yyyy-MM-dd          : Per Day
+        yyyy-MM-dd_HH       : Per Hour
+        yyyy-MM-dd_HH-mm    : Per minunte
+    -->
+    <!-- Support multiple-JVM writing to the same log file -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Prudent>true</Prudent>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${jboss.server.log.dir}/my-app.%d{yyyy-MM-dd-HHmm}.log</fileNamePattern>
+            <MaxHistory>2</MaxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>[%d{HH:mm:ssss}] %-5level %logger{10} - %msg%n</pattern>
+        </encoder>
+
+    </appender>
+
+    <!--        Habilita la salida estandandar via consola    -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>[%d{HH:mm:ssss}] %-5level %logger{36} - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <!--
+            Levels:
+                TRACE, DEBUG, INFO, WARN, ERROR, ALL or OFF.
+    	         Note that the level of the root logger cannot be set to INHERITED or NULL.
+		<logger name=".*" level="debug"/>
+    -->
+    <!-- <logger name="com.ph.*" level="INFO"/>-->
+
+    <logger name="org.jboss.ejb3.interceptors.registry.InterceptorRegistry" level="ERROR"/>
+
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classloading xmlns="urn:jboss:classloading:1.0"
+              name="Publicador.ear"
+              parent-first="false"
+              domain="DefaultDomain"
+              parent-domain="Ignored"
+              export-all="NON_EMPTY"
+              import-all="false">
+    <!-- excluded="org.apache.log4j,org.slf4j"-->
+</classloading>
